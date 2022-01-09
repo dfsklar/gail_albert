@@ -2,34 +2,9 @@
 <html lang="en" class="nytapp-vi-interactive" xmlns:og="http://opengraphprotocol.org/schema/">
   <head>
     <meta charset="utf-8" />
-    <title data-rh="true">Gail Photo-Microsite Demo</title>
+    <title data-rh="true">Déjà Vu -- Gail Albert-Halaban</title>
     
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <script>
-      const override = (new URL(window.location)).searchParams.get('sentryOverride');
-      if (override || Math.floor(Math.random() * 100) <= 1) {
-        document.write('<script src="https://js.sentry-cdn.com/7bc8bccf5c254286a99b11c68f6bf4ce.min.js" crossorigin="anonymous">' + '<' + '/script>');
-      }
-    </script>
-    <script>
-      
-      if (window.Sentry) {
-        window.Sentry.onLoad(function() {
-          window.Sentry.init({
-            maxBreadcrumbs: 30,
-            release: '4349465327b34aaf5557a8ed5c64f2cc82b5a473',
-            environment: 'prd',
-            beforeSend: function(e, v) {
-              if (/amazon-adsystem|ads-us|ampproject|amp4ads|pubads|2mdn|chartbeat|gsi|bk_addPageCtx|yimg|BOOMR|boomerang/.test(v.originalException && v.originalException.stack || '')) return null;
-              return e;
-            }  
-          });
-        });
-      }
-    </script>
-  
-
     
     <link href="https://g1.nyt.com/fonts/css/web-fonts.b1c035e4560e0216caf8f03326e0430712b61041.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/vi-assets/static-assets/global-a390e9d7a067927dd253742a2f0124d4.css" />
@@ -134,7 +109,7 @@ THIS IS A GENERATED TEMPLATE FILE. DO NOT EDIT.
 
   <!-- critical path preloads -->
   <link rel="preload" href="https://static01.nyt.com/newsgraphics/2020/03/18/empty-spaces/bcb78d35240bafc70be83a67511433d6d6ca7c11/build/js/main.js" as="script">
-  <link rel="preload" href="https://static01.nyt.com/newsgraphics/2020/03/18/empty-spaces/bcb78d35240bafc70be83a67511433d6d6ca7c11/build/js/freebird.js" as="script">
+  <link rel="preload" href="freebird.js" as="script">
 
 
 <!-- css generated from src/style.scss, text-balancer, and svelte component CSS -->
@@ -675,7 +650,7 @@ Her new work began to evoke a eulogy to what we once thought of as city living. 
 <script>
   if ("" !== "none") {
     NYTG.watch('https://static01.nyt.com/newsgraphics/2020/03/18/empty-spaces/bcb78d35240bafc70be83a67511433d6d6ca7c11/build/js/main.js');
-    NYTG.load('https://static01.nyt.com/newsgraphics/2020/03/18/empty-spaces/bcb78d35240bafc70be83a67511433d6d6ca7c11/build/js/freebird.js');
+    NYTG.load('freebird.js');
   }
 </script>
 
