@@ -1,4 +1,28 @@
 @charset "UTF-8";
+
+/* Sklar controlling this: changing to upper-left corner */
+.g-top .g-asset.g-scrollingslides .g-label {
+    background: transparent;
+    text-align: left;
+  top: 10pt;
+  left: 10pt;
+  padding: 0;
+  color: white;
+  font-family: "nyt-cheltenham-small", "nyt-cheltenham-sh", georgia, "times new roman", times, serif;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.6);
+  font-size: 2.5vw;
+  line-height: 2.8vw;
+}
+
+
+.g-top-asset .g-body {
+    color: #DDDDDD;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+}
+
+
+
 /***********************
  B A S E   S T Y L E S 
 ************************/
@@ -3077,16 +3101,9 @@ br[data-owner=balance-text]:after {
   z-index: -1;
   margin: 0 0 -150vh 0;
 }
-.g-top .g-asset.g-scrollingslides .g-label {
-  background: transparent;
-  top: auto;
-  bottom: 10px;
-  padding: 0;
-  right: 15px;
-  color: rgba(255, 255, 255, 0.6);
-  font: 500 14px/20px "nyt-cheltenham-small", "nyt-cheltenham-sh", georgia, "times new roman", times, serif;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
-}
+
+
+
 .g-top .g-asset.g-scrollingslides .g-scrollinggraphic_items {
   transform: translate3d(0, -25vh, 0);
 }
